@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              screens:{
+                'xs':'320px'
+              }
+            }
+          }
+        }
+      </script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="my-8 bg-white">
+        <div class="container flex justify-between w-[85%] mx-auto">
+            <div class="nav-logo bg-orange-500 p-2 text-white rounded-3xl"><p>Ayub-web</p></div>
+            <ul class="nav-items flex gap-8 hidden lg:flex">
+                <li><a class="hover:text-[orange]" href="#">Home</a></li>
+                <li><a class="hover:text-[orange]" href="#">About</a></li>
+                <li><a class="hover:text-[orange]" href="#">Services</a></li>
+                <li><a class="hover:text-[orange]" href="#">Resume</a></li>
+                <li><a class="hover:text-[orange]" href="#">Portfolio</a></li>
+                <li><a class="hover:text-[orange]" href="#">Testimonial</a></li>
+                <li><a class="hover:text-[orange]" href="#">Blog</a></li>
+            </ul>
+            <button class="nav-btn w-[150px] hidden lg:block bg-orange-500 rounded-xl text-white rounded hover:bg-[white] hover:border hover:border-orange-500 hover:text-orange-500 ease-in duration-300 ">Contact Us</button>
+            <i class="fa-solid fa-bars lg:hidden md:flex  xs:flex" style="color: #ea6106;"></i>
+        </div>
+    </nav>
+    <header class="bg-orange-100">
+        <div class="container lg:flex xs:block  justify-between w-[85%] mx-auto">
+            <div class="header-items flex justify-center flex-col">
+                <p class=""><i class="fa-solid fa-briefcase" style="color: #74C0FC;"></i> I AM FRONTEND DEVELOPER</p>
+                <h2 class="text-7xl  flex-col">Creative Design <br> and WEB <b class="text-orange-500">Design</b></h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi iure nulla <br> similique consequatur illo amet, unde officiis veritatis modi delectus.</p>
+                <br>
+                <button class="header-btn xs:w-ful md:w-[40] bg-orange-500 w-[150px] h-[40px] text-white rounded hover:border hover:border-gray-500 hover:bg-orange-100 hover:text-orange-500 ease-in duration-300">Download My CV</button>
+            </div>
+            <div class="header-img lg:flex xs:hidden">
+                <img class="h-[450px] w-[700px]" src="./images/01 header.png" alt="user img">
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container flex w-[85%] lg:mx-auto my-24">
+            <div class="sect-img xs:hidden lg:flex bg-[gray]/40 rounded hover:bg-[gray]/90 ease-in duration-300 w-[95%]">
+                <img class="w-full" src="./images/02 sect.png" alt="img">
+            </div>
+            <div class="sect-items flex flex-col mx-auto lg:ml-40 xs:ml-10">
+                <p class=""><i class="fa-solid fa-briefcase" style="color: #74C0FC;"></i>About Me</p>
+                <h2 class="text-6xl  flex-col">I Can make a Website For Your <b class="text-orange-500">Company</b></h2>
+                <br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aut quo corporis nihil voluptatum ab molestias facilis veniam illo rem aperiam tempora iste ea quaerat debitis sint. Natus, doloribus ullam quibusdam tempore facilis quas dolorum nesciunt. Eius necessitatibus ad id tempore nihil inventore sed explicabo quasi excepturi, qui laborum nostrum.</p>
+                <br>
+                <div class="sect-tasks flex">
+                    <div class="first">
+                        <p><i class="fa-solid fa-check" style="color: #63E6BE;"></i> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, aperiam?</p>
+                    </div>
+                    <div class="second">
+                        <p><i class="fa-solid fa-stopwatch-20" style="color: #FFD43B;"></i> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eum?</p>
+                    </div>
+                </div>
+                <br>
+                <button class="sect-btn bg-orange-500 w-[150px] h-[40px] text-white rounded hover:bg-[white] hover:border hover:border-orange-500 hover:text-orange-500 ease-in duration-300">Download My CV</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container w-[85%] mx-auto">
+            <p class="text-cente text-center"><i class="fa-solid fa-briefcase" style="color: #74C0FC;"></i>My Service</p>
+            <br>
+            <h2 class="text-center text-4xl uppercase font-extrabold">Services I Offer</h2>
+            <br>
+            <div class="cards grid  xs:grid-cols-1 md:grid-cols-1 lg:flex-row lg:gap-8 lg:grid-cols-3  md:flex md:flex-col md:items-center xs:flex xs:flex-col xs:items-center">
+                <div class="card text-center w-[400px] h-[300px] gap-2  border border-orange-300  hover:bg-orange-100 ease-in duration-300 rounded-xl flex flex-col justify-center items-center">
+                    <i class="fa-solid fa-pen-nib text-6xl" style="color: #FFD43B;"></i>
+                    <h4 class="text-2xl font-bold">Site design</h4>
+                    <br>
+                    <p>Hen our power of choice is <br> untrammelled and when nothing <br> prevents our being able</p>
+                </div>
+                <div class="card text-center w-[400px] h-[300px] gap-2  border border-orange-300  hover:bg-orange-100 ease-in duration-300 rounded-xl flex flex-col justify-center items-center">
+                    <i class="fa-solid fa-mobile text-6xl" style="color: #dea43f;"></i>
+                    <h4 class="text-2xl font-bold">Mobile App</h4>
+                    <br>
+                    <p>Hen our power of choice is <br> untrammelled and when nothing <br> prevents our being able</p>
+                </div>
+                <div class="card text-center w-[400px] h-[300px] gap-2  border border-orange-300  hover:bg-orange-100 ease-in duration-300 rounded-xl flex flex-col justify-center items-center">
+                    <i class="fa-brands fa-web-awesome text-6xl" style="color: #f3b344;"></i>
+                    <h4 class="text-2xl font-bold">Web Developer</h4>
+                    <br>
+                    <p>Hen our power of choice is <br> untrammelled and when nothing <br> prevents our being able</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-orange-100 my-8">
+        <div class="container  w-[85%] mx-auto">
+            <p class="text-cente text-center"><i class="fa-solid fa-briefcase" style="color: #74C0FC;"></i>My Resume</p>     
+            <h2 class="uppercase text-center text-3xl">1 years of experience</h2>
+            <div class="cards grid xs:grid-cols-1 md:grid-cols-1 pb-4 text-orange-200">
+                <br>
+                <div class="card w-[80%] h-[50px] bg-[white]">
+                    <h4 class="hover:text-[black] duration-300">
+                        App Development
+                        Quixy
+
+                        92%
+
+                        AppyPie
+
+                        87%
+
+                        iBuildApp
+
+                        82%
+                    </h4>
+                </div>
+                <br>
+                <div class="card w-[80%] bg-[white]">
+                    <h4 class="hover:text-[black] duration-300">Frontend:
+                        Brac Developer Team - (2012 - 2016)
+                        <br>
+                        Pomnis voluptas assumenda est, omnis dolor repellezzndus.
+                    </h4>
+                </div>
+                <br>
+                <div class="card w-[80%] bg-[white]">
+                    <h4 class="hover:text-[black] duration-300">
+                        UI/UX Designer
+                        <br>
+                        Google Out Tech - (2017 - Present)
+                        Pomnis voluptas assumenda est, omnis dolor repellendus.
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[black] text-white">
+        <div class="container w-[85%] mx-auto">
+            <div class="cards flex items-center justify-between">
+                <div class="card xs:w-[40%]">
+                    My number: +998 (97)-038-17-11
+                    <br>
+                    <br>
+                    <p class="xs:hidden md:block lg:block">At vero eos et accusamus et iusto odio dign <br> ducimus qui blanditiis praesentium volup <br> deleniti atque corrupti quos dolores et <br> molestias excepturi sint occaecati</p>
+                </div>
+                <div class="card xs:hidden md:hidden lg:block">
+                    <h4>Explore Link</h4>
+                    <br>
+                    <a href="#">About</a>
+                    <br>
+                    <a href="#">Resume</a>
+                    <br>
+                    <a href="#">Portfolio</a>
+                    <br>
+                    <a href="#">Blog</a>
+                    <br>
+                </div>
+                <div class="card flex gap-4">
+                    <i class="fa-brands fa-tiktok hover:text-orange-200 ease-in duration-300"></i>
+                    <i class="fa-brands fa-facebook hover:text-orange-200 ease-in duration-300"></i>
+                    <i class="fa-brands fa-instagram hover:text-orange-200 ease-in duration-300"></i>
+                    <i class="fa-brands fa-discord hover:text-orange-200 ease-in duration-300"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
